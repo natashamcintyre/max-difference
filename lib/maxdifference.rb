@@ -2,12 +2,16 @@ def maxDifference(px)
     # Write your code here
   spreads = []
   for i in 1...px.length do
-    stock_range = px[0..i]
-    price_on_day = stock_range.pop
-    lowest_prior_price = stock_range.sort!.first
-    difference = price_on_day - lowest_prior_price
-    spreads << difference
+    spreads << get_spread(px[0..i])
   end
-  greatest_spread = spreads.sort!.last
-  greatest_spread <= 0 ? -1 : greatest_spread
+  highest_positive_spread = spreads.sort!.last
+  highest_positive_spread <= 0 ? -1 : highest_positive_spread
+end
+
+private
+
+def get_spread(range)
+  price_on_day = range.pop
+  lowest_prior_price = range.sort!.first
+  price_on_day - lowest_prior_price
 end
