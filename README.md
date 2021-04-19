@@ -6,6 +6,7 @@ Each element in the array is between -10^5 and 10^5
 INPUT | OUTPUT
 -|-
 [2, 5] | 3
+[1, 9] | 8
 [2, 2] | -1
 [2, 1] | -1
 [7, 1, 2, 5] | 4

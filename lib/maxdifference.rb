@@ -1,5 +1,5 @@
 def maxDifference(px)
     # Write your code here
-    3
+    px[-1] - px[0]
 
 end
