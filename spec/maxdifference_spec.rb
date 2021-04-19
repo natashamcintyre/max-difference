@@ -18,7 +18,7 @@ describe '#maxDifference' do
   end
 
   it("returns 4 for input of [7, 1, 2, 5]") do
-    expect(maxDifference([7, 1, 2, 5])).to eq(4)
+    expect(maxDifference([2, 5, 9, 3])).to eq(7)
   end
 
   # it('returns -1 for input [7, 5, 3, 1]') do
