@@ -13,6 +13,8 @@ Each element in the array is between -10^5 and 10^5
 ## MidWay Reflection
 I've misunderstood. I thought it was always the greatest difference between final value and rest of array, but it's any difference in the array!
 
+Need to think how to iterate (and what to not bother iterating with - tests not running fast enough for super high numbers)
+
 INPUT | OUTPUT
 -|-
 [2, 5] | 3
