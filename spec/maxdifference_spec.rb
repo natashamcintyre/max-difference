@@ -16,4 +16,8 @@ describe '#maxDifference' do
   it('returns -1 for negative difference') do
     expect(maxDifference([2, 0])).to eq(-1)
   end
+
+  it("returns 4 for input of [7, 1, 2, 5]") do
+    expect(maxDifference([7, 1, 2, 5])).to eq(4)
+  end
 end
