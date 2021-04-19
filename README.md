@@ -1,7 +1,17 @@
 Calculate highest positive spread between closing price and any closing price on any prior day in history. Ie biggest difference between last number and any other lower number in array. If diff is 0 or negative, return -1
 
-The array will always contain a positive number of items
+Constraints for maxDifference(px[n])
+
+*1 <= n <= 10^5*
+
+The array will always contain 2 or more values (numbers)
+
+*-10^5 <= px[n] <= 10^5*
+
 Each element in the array is between -10^5 and 10^5
+
+## MidWay Reflection
+I've misunderstood. I thought it was always the greatest difference between final value and rest of array, but it's any difference in the array!
 
 INPUT | OUTPUT
 -|-
